@@ -126,7 +126,7 @@ class Response
         }
 
         Headers::contentJSON($code);
-        echo json_encode($dataToPrint);
+        echo json_encode($dataToPrint, JSON_UNESCAPED_UNICODE);
     }
 
 
